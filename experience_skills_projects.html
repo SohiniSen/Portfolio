@@ -1,0 +1,258 @@
+<html>
+    <head>
+        <title >Portfolio</title>
+        <link rel=icon href=img/feather.png sizes="100x100" type="image/png">
+        <link rel="stylesheet" href="css/bootstrap.css" >
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /* navigation bar */
+            .overlay {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0, 0.9);
+                overflow-x: hidden;
+                transition: 0.5s;
+                font-family: "Times New Roman", Times, serif
+                }
+
+            .overlay-content {
+                position: relative;
+                top: 25%;
+                width: 100%;
+                text-align: center;
+                margin-top: 30px;
+                }
+
+            .overlay a {
+                padding: 8px;
+                text-decoration: none;
+                font-size: 36px;
+                color: #ffffff;
+                display: block;
+                transition: 0.3s;
+                }
+
+            .overlay a:hover, .overlay a:focus {
+                color: #ffffff;
+                }
+
+            .overlay .closebtn {
+                position: absolute;
+                margin-top: -20px;
+                left: 10px;
+                font-size: 60px;
+                
+                }
+
+            @media screen and (max-height: 450px) {
+                .overlay a {font-size: 70px}
+                .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+                
+                }
+            }
+            /* End: style(css) for menu list */
+            
+            /* start: style for menu button */
+            .bar1, .bar2, .bar3 {
+                width: 35px;
+                height: 5px;
+                background-color: rgb(0, 0, 0);
+                margin: 6px 0;
+                
+                transition: 0.4s;
+            }
+
+            .change .bar1 {
+                -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+                transform: rotate(-45deg) translate(-9px, 6px);
+            }
+
+            .change .bar2 {opacity: 0;}
+
+            .change .bar3 {
+                -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                transform: rotate(45deg) translate(-8px, -8px);
+            }
+
+            #logo{
+            height:98;
+            border-style: solid;
+            margin:10
+            /* border-radius: 40%; */
+            /* float:right */
+            
+            }
+            #exp{
+                text-align: center;
+                font-size: 40;
+                font-family:Verdana, Geneva, Tahoma, sans-serif!important;
+                background-color: rgb(90, 149, 153);
+                color: black;
+                padding: 10;
+                         
+            }
+            p{
+                font-size: 25!important;
+                padding: 40;
+                text-align:left
+            }
+            #project{
+                height:200;
+                /* border-style: solid; */
+                /*  width: 250px; */
+                box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                text-align: center;
+                padding: 5;
+                margin:30
+            }
+            #project_descrition{
+                text-align: center;
+                text-decoration:underline;
+            }
+            #menu{
+                font-size:15px;
+                cursor:pointer;
+                margin-left:10;
+                font-family: "Times New Roman", Times, serif
+            }
+        </style>
+    </head>
+    <body style="background-color: rgb(209, 203, 203);" >
+        <span id="menu">Menu</span>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
+            <div class="overlay-content">
+              <a href="index.html">Home</a>
+              <a href="about.html">About me</a>
+              <a href="experience_skills_projects.html">Experience, Skills & Projects</a>
+              <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <!-- menu Bar -->
+        <script>
+            function openNav() {
+              document.getElementById("myNav").style.width = "100%";
+            }
+            
+            function closeNav() {
+              document.getElementById("myNav").style.width = "0%";
+            }
+            // function Menu(x) {
+            //     x.classList.toggle("change");
+            // }
+        </script>
+          
+          <!-- Use any element to open/show the overlay navigation menu -->
+        <span onclick="openNav()">
+            
+                <!-- Click on the Menu Icon to transform it to "X" -->
+                <div class="container" onclick="Open(this);" style="margin-right: 100%;">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                </div>
+            
+        </span>
+        
+
+        <!-- Skills -->
+        <div class="col-md-12 col-sm-12 " id="exp" style="margin-bottom: 20;"><strong>Skills</strong><br>
+        </div>
+        <div class="col-md-12 col-sm-12 " style="margin-bottom: 20;">
+            
+            
+            <img id="logo" src="img/qgis3_logo.png" alt="*QGIS" >
+            <img id="logo" src="img/google_sheet_logo.png" alt="*Google Sheet" >
+            <img id="logo" src="img/ArcGIS_logo.jpg" alt="*ArcGIS" >
+            <img id="logo" src="img/Autocad_logo.jpg" alt="*AutoCAD" >
+            <img id="logo" src="img/josm_logo.jpg" alt="*JOSM" >
+            <img id="logo" src="img/python_logo.jpg" alt="*Python" style="border-radius: 50%;">
+            <img id="logo" src="img/bentley-microstation-logo.jpg" alt="*MicroStation" >
+            <img id="logo" src="img/html_logo.png" alt="*HTML" style="border-radius: 50%;">
+            <img id="logo" src="img/css_logo.jpg" alt="*CSS" >
+            <img id="logo" src="img/bootstrap_logo.png" alt="*Bootstrap" >
+            <img id="logo" src="img/wordpress-logo.png" alt="*WordPress" style="border-radius: 50%;">
+            <img id="logo" src="img/draftsight-logo.jpg" alt="*DraftSight" >
+            <img id="logo" src="img/open_layers.png" alt="*DraftSight" ><br><br>
+            
+
+        </div>
+
+        <!-- Experience -->
+        <div class="col-md-12 col-sm-12 " id="exp" style="margin-bottom: 20;"><strong>Experience</strong></div>
+        <div class="col-md-12 col-sm-12 " >
+            <p>
+                <Strong>
+                    
+                    Company - <strong style="text-decoration: underline;">NEAR.CO:</strong><br>
+                    [AUG 2020 - MAR 2021] <br>
+                    [8 Months]<br>
+                    <img id="logo" src="img/near.png" alt="*near.co_logo" style="float: right;">
+                </Strong><br>
+                    Worked at ‘Near.co’ as GIS Intern from August 2020 to March 2021 (7+ Months)<br>
+                    > Database clean-up and refresh of various brands. <br>
+                    > Generation of Place Matrix (BFP) in QGISand ArcGIS. <br>
+                    > Geodatabase Management using Arc Map. <br>
+                    > Data extraction of the various brand using Python and google chrome extensions<br>
+                    > Geo-Hash checking to refresh locations<br>
+                    > Experienced with google sheet<br>
+                    > Python automation tasks to make GIS works easy (Example: Clipping, Snapping)<br><br>
+                
+                <Strong>
+                    Company - <strong style="text-decoration: underline;">DEDUCE TECHNOLOGIES:</strong><br>
+                    [SEPT 2019 - MAY 2020]<br>
+                    [9 Months]<br>
+                    <img id="logo" src="img/deduce technologies.png" alt="*Deduce Technologies_logo" style="float: right;">
+                </Strong><br>
+                    Worked at ‘Deduce Technologies’ as Trainee GIS Analyst from Sept 2019 to May 2020 (9
+                    Months)<br>
+                    > Delivered 28 top cities of India as Place Matrix (BFP) with quality and target time.<br>
+                    > QA & integration of Geo-fence and by enhancing the location with spatial and non-spatial
+                    which includes surveyed data sets.<br>
+                    > QA & integration of nearest access points for the taxi andfood delivery services. <br>
+                    > Terra matching of Aerial LiDAR & Mobile LiDAR data in browser with reference to GCP. <br>
+                    > Classification of human made & ground using point cloud (LiDAR) data. <br><br>
+
+                <Strong>
+                    Company - <strong style="text-decoration: underline;">SHANKARA COLONY:</strong><br>
+                    [JAN 2019 - JUN 2019] <br>
+                    [6 Months]<br>
+                    <img id="logo" src="img/Shankara_colony.jpg" alt="*Sri Shankara Colony_logo" style="float: right;">
+                </Strong><br>
+                    I have pursued an internship on “Web-GIS” from Shankara Colony (Real Estate Start-up
+                    Company). The self-explanatory Project titles arementioned below:<br>
+                    > Mapping of RV College Campus (details about the Classes). <br>
+                    > Generating BFPs of Real Estate Plots using Autodesk AutoCAD. <br>
+                    > Making a Legal Page for a real Estate Company. <br>
+                    > Mapping a Real Estate Project<br>
+
+            </p>
+        </div>
+        
+        
+        
+
+        <!-- Projects -->
+        <div class="col-md-12 col-sm-12 " id="exp" style="margin-bottom: 20;"><Strong>Project</Strong></div>
+        <div class="row">
+            <div class="col-md-7 col-sm-12 ">
+                <h1 id="project_descrition">Web Development</h1>
+                
+                <p style="text-align:center"><strong>Front End:</strong> <br>Portfolio Website has been created using <Strong>HTML, CSS, Bootstrap & Javascript</Strong>.<br> <br> *Please Click on the Image to visit the website*</p>
+            </div>
+            <div class="col-md-4 col-sm-12 ">
+                <a href="index.html">
+                    <img id="project" src="img/Web_development.jpg" alt="*Web development" style="float: left;">
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

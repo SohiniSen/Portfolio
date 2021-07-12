@@ -1,0 +1,213 @@
+<html>
+    <head>
+        <title >Sohini : Portfolio</title>
+        <link rel=icon href=img/feather.png sizes="100x100" type="image/png">
+        <link rel="stylesheet" href="css/bootstrap.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /* Start : animation and style(css) for image */
+            img:hover {
+              animation: shake 0.5s;
+              animation-iteration-count: infinite;
+              
+            }
+            
+            /* button:hover {
+              animation: shake 3s;
+              animation-iteration-count: infinite;
+            } */
+            
+            @keyframes shake {
+              0% { transform: translate(1px, 1px) rotate(0deg); }
+              10% { transform: translate(-1px, -2px) rotate(-1deg); }
+              20% { transform: translate(-3px, 0px) rotate(1deg); }
+              30% { transform: translate(3px, 2px) rotate(0deg); }
+              40% { transform: translate(1px, -1px) rotate(1deg); }
+              50% { transform: translate(-1px, 2px) rotate(-1deg); }
+              60% { transform: translate(-3px, 1px) rotate(0deg); }
+              70% { transform: translate(3px, 1px) rotate(-1deg); }
+              80% { transform: translate(-1px, -1px) rotate(1deg); }
+              90% { transform: translate(1px, 2px) rotate(0deg); }
+              100% { transform: translate(1px, -2px) rotate(-1deg); }
+            }
+             /* End : animation and style(css) for image */
+            /* button {
+
+                background-color: rgb(9, 41, 43);
+                border-color:rgb(132, 214, 207);
+                color:rgb(132, 214, 207) ;
+                font-size: 25px;
+                margin-top: 50px
+            } */
+            /* Start: style(css) for menu list */
+            .overlay {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0, 0.9);
+                overflow-x: hidden;
+                transition: 0.5s;
+                }
+
+            .overlay-content {
+                position: relative;
+                top: 25%;
+                width: 100%;
+                text-align: center;
+                margin-top: 30px;
+                }
+
+            .overlay a {
+                padding: 8px;
+                text-decoration: none;
+                font-size: 36px;
+                color: #ffffff;
+                display: block;
+                transition: 0.3s;
+                }
+
+            .overlay a:hover, .overlay a:focus {
+                color: #ffffff;
+                }
+
+            .overlay .closebtn {
+                position: absolute;
+                margin-top: -20px;
+                left: 10px;
+                font-size: 60px;
+                
+                }
+
+            @media screen and (max-height: 450px) {
+                .overlay a {font-size: 70px}
+                .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+                
+                }
+            }
+            /* End: style(css) for menu list */
+            
+            /* start: style for menu button */
+            .bar1, .bar2, .bar3 {
+                width: 35px;
+                height: 5px;
+                background-color: rgb(0, 0, 0);
+                margin: 6px 0;
+                transition: 0.4s;
+            }
+
+            .change .bar1 {
+                -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+                transform: rotate(-45deg) translate(-9px, 6px);
+            }
+
+            .change .bar2 {opacity: 0;}
+
+            .change .bar3 {
+                -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                transform: rotate(45deg) translate(-8px, -8px);
+            }
+            /* end: style for menu button */
+
+            /* bg color diagonal */
+            #bg_diagonal{
+                background: linear-gradient(20deg, rgb(160, 158, 158) 50%, transparent 20% )
+            }
+            #project{
+                height:600;
+                box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                text-align: center;
+                padding: 2;
+                margin:10
+            }
+            #title_border{
+                 
+                border-bottom:solid; 
+                padding:10
+            }
+            h1{
+                padding: 10;
+                font-size: 60;
+                letter-spacing: 10px;
+            }
+            h2{
+                font-size: 60;
+                letter-spacing: 10px;
+            }
+            #menu{
+                font-size:15px;
+                cursor:pointer;
+                margin-left:10;
+                font-family: "Times New Roman", Times, serif;
+                color: black;
+            }
+            
+        </style>
+    </head>
+    <body style="background-color:rgb(90, 149, 153); overflow-x: hidden; width: 100%" id="bg_diagonal">
+        <span id="menu">Menu</span>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="index.html">Home</a>
+              <a href="about.html">About me</a>
+              <a href="experience_skills_projects.html">Experience, Skills & Projects</a>
+              <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <!-- Menu Bar -->
+        <script>
+            function openNav() {
+              document.getElementById("myNav").style.width = "100%";
+            }
+            
+            function closeNav() {
+              document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+          
+          <!-- Use any element to open/show the overlay navigation menu -->
+        <span onclick="openNav()">
+            
+            <!-- Click on the Menu Icon to transform it to "X" -->
+            <div class="container" onclick="Open(this);" style="margin-right: 100%;">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            </div>
+            
+        </span>
+        <div class='row' style="font-family:'Merienda', cursive!important;text-align: center;color: black">
+
+            <!-- Adding shaking image -->
+            <div class="col-md-5 col-sm-5">
+                <img src="img/Sohini_Sen1.jpg" alt="img" height=550px id="project" style ="float: right;margin-top:10;border-radius: 30%" >
+            </div>
+
+            <!-- adding home page text -->
+            <div class="col-md-6 col-sm-6" style="margin-top: 40px!important;" >
+                <h1><strong id="title_border" style="border-left:solid;">Sohini Sen's</Strong></h1>
+                <h2><strong id="title_border" style="border-right:solid;">Portfolio</strong></h2><br>
+                <h3><br>__GIS Developer Aspirant__</h3>
+                <p style="margin-top: 40px;font-size: 25;">
+                    
+                    <strong>Dear Folks! </strong><br><br>
+                    Its my pleasure to have you on my Portfolio Website <br><br>
+                    Please click on <strong>Menu</strong> to know more about me  </p>
+
+            </div> 
+        </div>
+    </body>
+
+</html>
+
