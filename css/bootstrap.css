@@ -51,6 +51,8 @@ body {
   font-weight: 400;
   line-height: 1.5; */
   color: #000000;
+  background-color: rgb(209, 203, 203);
+  
   /* background-color: rgb(224, 38, 200); */
   /* -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
@@ -746,7 +748,7 @@ progress {
 }
 
 .col-12 {
-  flex: 0 0 auto;
+  flex: 0 0 0;
   width: 100%;
 }
 
@@ -957,6 +959,8 @@ progress {
   .col-sm-12 {
     flex: 0 0 auto;
     width: 100%;
+    font-size: inherit
+    
   }
 
   .offset-sm-0 {
@@ -5313,9 +5317,10 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   flex-shrink: 0;
   align-items: center;
+  /* text-align: center; */
   justify-content: flex-end;
   padding: 0.75rem;
-  border-top: 1px solid #dee2e6;
+  /* border-top: 1px solid #dee2e6; */
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px);
 }

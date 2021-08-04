@@ -3,92 +3,19 @@
         <title>Sohini Sen : About</title>
         <link rel=icon href=img/feather.png sizes="100x100" type="image/png">
         <link rel="stylesheet" href="css/bootstrap.css" >
+        <link rel="stylesheet" href="css/menu_bar.css" >
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
        
     
         <style>
         body, html {
-        /* height: 100%; */
-        /* margin: 100%; */
-        font-family: Arial, Helvetica, sans-serif;
-        /* display:block; */
-        font-size: 18;
-        }
-        /* navigation bar */
-        .overlay {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: rgb(0,0,0);
-            background-color: rgba(0,0,0, 0.9);
-            overflow-x: hidden;
-            transition: 0.5s;
-            font-family: "Times New Roman", Times, serif
-            }
-
-        .overlay-content {
-            position: relative;
-            top: 25%;
-            width: 100%;
-            text-align: center;
-            margin-top: 30px;
-            }
-
-        .overlay a {
-            padding: 8px;
-            text-decoration: none;
-            font-size: 36px;
-            color: #ffffff;
-            display: block;
-            transition: 0.3s;
-            }
-
-        .overlay a:hover, .overlay a:focus {
-            color: #ffffff;
-            }
-
-        .overlay .closebtn {
-            position: absolute;
-            margin-top: -20px;
-            left: 10px;
-            font-size: 60px;
-            
-            }
-
-        @media screen and (max-height: 450px) {
-            .overlay a {font-size: 70px}
-            .overlay .closebtn {
-            font-size: 40px;
-            top: 15px;
-            right: 35px;
-            
-            }
-        }
-        /* End: style(css) for menu list */
         
-        /* start: style for menu button */
-        .bar1, .bar2, .bar3 {
-            width: 35px;
-            height: 5px;
-            background-color: rgb(0, 0, 0);
-            margin: 6px 0;
-            
-            transition: 0.4s;
-        }
-
-        .change .bar1 {
-            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-            transform: rotate(-45deg) translate(-9px, 6px);
-        }
-
-        .change .bar2 {opacity: 0;}
-
-        .change .bar3 {
-            -webkit-transform: rotate(45deg) translate(-8px, -8px);
-            transform: rotate(45deg) translate(-8px, -8px);
+        font-family: Arial, Helvetica, sans-serif;
+        
+        font-size: 18;
         }
         * {
         box-sizing: border-box;
@@ -118,11 +45,10 @@
         }
         .text2 {
             background-color: black;margin:10 ;
-            font:x-large;
             color: rgb(119, 116, 119);
         }
         
-        position {
+        .position {
             position: -webkit-sticky !important;
             position: sticky !important;
             top: 0 !important;
@@ -142,19 +68,30 @@
             height: 20;
             color: rgb(119, 116, 119);
         }
-        #menu{
-                font-size:15px;
-                cursor:pointer;
-                margin-left:10;
-                font-family: "Times New Roman", Times, serif
-            }
+        .headAlign{
+            text-align: center;
+        }
+        
         
         
         </style>
     </head>
     <body style="overflow-x: hidden;background-color: rgb(209, 203, 203)" >
-            <span id="menu">Menu</span>
-            <div id="myNav" class="overlay">
+        
+        
+        <p id="BigNavbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About me</a></li>
+                <li><a href="experience_skills_projects.html">Experience, Skills & Projects</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+            </ul>
+        </p>
+        
+        
+  
+    
+            <div id="myNav" class="overlay" >
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
                 <div class="overlay-content">
                 <a href="index.html">Home</a>
@@ -163,7 +100,8 @@
                 <a href="contact.html">Contact</a>
                 </div>
             </div>
-            <!-- menu Bar -->
+            
+            <!-- Menu Bar -->
             <script>
                 function openNav() {
                 document.getElementById("myNav").style.width = "100%";
@@ -172,9 +110,8 @@
                 function closeNav() {
                 document.getElementById("myNav").style.width = "0%";
                 }
-                
             </script>
-            
+            <!-- <span id="menu">Menu</span> -->
             <!-- Use any element to open/show the overlay navigation menu -->
             <span onclick="openNav()">
                 
@@ -189,7 +126,7 @@
         <div style="background-color: rgb(110, 169, 173)!important; position:static;">
         
             
-            <h1 style="color:black ; text-align: center;padding: 20px"><strong style="border-right-style: dotted;border-left-style: dotted;border-top-style: solid;">   __About Me__   </strong></h1>
+            <h1 class="example"  style="color:black ; text-align: center;padding: 20px"><strong style="border-right-style: dotted;border-left-style: dotted;border-top-style: solid;">   __About Me__   </strong></h1>
         
             
         </div >
@@ -198,94 +135,94 @@
         
         <div class='row'>
             <div  class="col-md-8 col-sm-12 ">
-                <div class="bg-text">
-                    <h1 style="color: black;text-align: center;"><strong>OBJECTIVE</strong></h1>
-                    <h4>My Career objective is to become a subject matter expert in GIS Automation using various programming languages like Python, etc., and contribute something essential to the growth of the esteemed organizations I work with.</h4>
+                <div class="bg-text example">
+                    <!-- <p class="example headAlign" style="color: black;"><strong>OBJECTIVE</strong></p> -->
+                    <p class="allfont">
+                        The name is Sohini Sen. I am a GIS Developer. Strong in understanding and implementing Geographical Information System and applications, and managing Software projects. Improvementing and growing in all phases of the GIS Developmental Life Cycle. <br><br>
+                        &bull; Specialities: Geographical Information System, Geospatial Solution, Microsoft & ESRI Technologies, Qantum GIS, Web Development, Python, Javascript, HTML Parcing, GIS tool Scripting
+                        <br><br>
+                        &bull; Strengths: Loyal, dedicated, team player & independent worker, quick learner and good communication skills
+                        <br><br>
+                        “Geographers never get lost. They just do accidental field work.” <br>
+                        <strong>~ Nicholas Chrisman</strong>
+                        </p>
                 </div>
                 
             
             
                 <!-- coding -->
-                <div class='row text2' >
-                    <div class="col-md-12 col-sm-12 " style="color: rgb(119, 116, 119);;text-align: center;" >
+                <div class='row text2 ' >
+                    <div class="col-md-12 col-sm-12 example headAlign" style="color: rgb(119, 116, 119);" >
                         
-                        <h1> <strong style="color: blanchedalmond;">GIS_DEVELOPER</strong></h1>
+                        <p> <strong style="color: blanchedalmond;">GIS DEVELOPER</strong></p>
                     </div>
-                    <div class="col-md-12 col-sm-12" style="color: rgb(119, 116, 119);" >
-                        <h4>
+                    <div class="col-md-12 col-sm-12 allfont" style="color: rgb(119, 116, 119);" >
+                        <p>
                             MSc. in GIS with no programming knowledge.<br>
                             Started learning python and created few scriptes to Extract data in my previous company, was not enough.
                             Wanted to learn more.<br>
                             Started learning Web GIS Development from Udemy by Krishna Lodha.<br>
                             Created this Portfolio website using HTML, CSS, bootstrap, javascript.<br>
-                            Still Learning.......<br>
+                            Working on Creating Scripts and Webpages.<br>
+                            Much more to Learn.<br>
                             
-                        </h4>
+                        </p>
                     </div>
                 </div>
                 <!-- GIS -->
-                <div class='row bg-text'  >
-                    <div class="col-md-12 col-sm-12"  >
-                        <h1>
+                <div class='row bg-text '  >
+                    <div class="col-md-12 col-sm-12 example headAlign"  >
+                        <p>
                             <Strong>
                                 GEOGRAPHICAL INFORMATION SCIENCE
                             </Strong>
-                        </h1>
+                        </p>
                     </div>
-                    <div class="col-md-12 col-sm-12  "  style="margin-top: 30;margin-bottom: 30;">
-                        <h4>
+                    <div class="col-md-12 col-sm-12 allfont">
+                        <p>
                             Geography was my main subject in UG where I developed the interest for Geographical Information System(GIS). 
                             Took a Masters Degree in GIS and have working experience with 3 Companies in GIS Domain. 
                             Data Management of Vector and Raster Data, collecting and generating vector data, working as a Team and also independently at time, were my responsibilities at work.
-                            I am Aspiring to become a GIS developer. <br><br>
-                            Learning related to GIS Development and other Projects will be updated in my Website.
-                        </h4>
+                            I am a Self-Taught GIS developer. <br><br>
+                            Follow my Website to get more Updates on  GIS webpages, GIS scripts that I am working on. 
+                        </p>
                     </div>
                     
                 </div>
                 <!-- Education -->
-                <div class="row text2" style="border-style:dotted;">
-                    <h1 style="color: blanchedalmond;text-align: center;"><strong>EDUCATION</strong></h1>
+                <div class="row text2 " style="border-style:dotted;">
+                    <p class="example headAlign" style="color: blanchedalmond;"><strong>EDUCATION</strong></p>
                     <table  class="bg-text center" style="padding: 20;border-style: none; " >
                         
                         
-                        <tr style="border-bottom: solid;border-top: solid;">
-                            <strong>
-                                <th>Year</th>
-                                <th>Institute</th> 
-                                <th>Marks</th>
-                            </strong>
-                        </tr>
-                        <tr>
-                            <td>2019</td>
-                            <td>MSc. GIS (Bangalore University)</td>
-                            <td>7.93(GDPA)</td>
-                        </tr>
-                        <tr>
-                            <td>2017</td>
-                            <td>BSc. Geography<br>
-                                [Shri Shikshayatan College (Calcutta University)]</td>
-                            <td>55.5%</td>
-                        </tr>
-                        <tr>
-                            <td>2014</td>
-                            <td>ISC</td>
-                            <td>83.5%</td>
-                        </tr>
-                        <tr>
-                            <td>2012</td>
-                            <td>ICSE</td>
-                            <td>83%</td>
-                            </tr>
+                        <p class="allfont"> 
+                            (2019) Bangalore University > M.Sc. GIS<br>
+                            (2017) Calcutta University > B.Sc. Geography<br>
+                            (2014) ISC <br>
+                            (2012) ICSE
+                        </p>
+                        
                     </table>
                         
                 </div>
             </div>
             <!-- Profile picture -->
-            <div  class="col-md-4 col-sm-12 position" id="position" style="padding: 20;">
-                <img src="img/Sohini_Sen1.jpg" alt="img" height=650px style ="float:none;border:5px solid;border-radius: 20%;position: sticky;top: 0 ;vertical-align:middle" >
+            <div  class="col-md-4 col-sm-12 position " id="position" >
+                <img id="imgsize" src="img/Sohini_Sen1.jpg" alt="img" >
             </div>
+            
         </div>
+        
+        <!-- social Media contacts -->
+        <div style="text-align: center;"  >
+            <br>
+            
+            <a href="https://www.linkedin.com/in/sohini-sen-44a143185/" class="fab fa-linkedin"></a>
+            <a href="skype:live:b514f370e0de2f33?chat, https://join.skype.com/invite/UIUUptU30eri" class="fab fa-skype"></a>
+            <a href="https://github.com/SohiniSen" class="fab fa-github"></a><br><br>
+        
+        </div>
+        
         
     </body>
 </html>
